@@ -18,7 +18,7 @@ nav{
     padding: 20px 20px;
     flex-direction: row;
     justify-content: space-around;
-    width: 100vw;
+    width: 100%;
 
     img{
         height: 32px;
@@ -30,12 +30,57 @@ nav{
 
    ul a{
         color: white;
+        
+    }
+}
+
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    
+
+  #container{
+    h1{
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    p{
+        margin-top: 50px;
+        line-height: 29px;
+        width: 60%;
+    }
+  }
+   #apresenta{
+       max-width: 50%;
+   }
+}
+
+
+
+
+
+@media screen and (max-width:765px){
+    main{
+       flex-direction: column;
+       #container{
+           text-align: center;
+           p{
+               width: 100%;
+           }
+       }
+
+       #apresenta{
+           max-width: 70%;
+       }
     }
 }
 
 @media screen and (max-width:700px){
-    
-
     #nav{
        transform: translateX(-100%);
        position: absolute;
@@ -46,9 +91,12 @@ nav{
        position: absolute;
         display: flex;
        width: 100%;
-       height: 80%;
+       height: 100%;
        li{
            padding: 10px 0px;
+           a{
+               font-size: 20px;
+           }
        }
     }
 
@@ -65,19 +113,3 @@ nav{
     }
 }
 
-
-/*
-#nav{
-        transition: 0.5s;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        position: absolute;
-        height: 100vh;
-        width: 100vw;
-        li{
-            padding: 10px 0px;
-        }
-    }
-
-    */
